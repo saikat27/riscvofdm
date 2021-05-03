@@ -1,0 +1,612 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May  3 21:37:05 2021
+# Process ID: 10020
+# Current directory: C:/Users/saika/Documents/riscv32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3952 C:\Users\saika\Documents\riscv32\mips32.xpr
+# Log file: C:/Users/saika/Documents/riscv32/vivado.log
+# Journal file: C:/Users/saika/Documents/riscv32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/saika/Documents/riscv32/mips32.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/saika/Documents/Verilog-HDL-FFT-32-points-hardware-module-main/mips32' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 831.066 ; gain = 176.238
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_risc32' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_risc32_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_RISC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_risc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xelab -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pipe_RISC32
+Compiling module xil_defaultlib.test_risc32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_risc32_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/xsim.dir/test_risc32_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/xsim.dir/test_risc32_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon May  3 21:59:13 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon May  3 21:59:13 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 861.418 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_risc32_behav -key {Behavioral:sim_1:Functional:test_risc32} -tclbatch {test_risc32.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source test_risc32.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Loading Instructions to memory...
+Register file initialised....
+.........
+.........
+Instructions Loaded....
+Program Counter:00000000, ALU Output:xxxxxxxx, ID_Ex_type:xx
+ALU operand A:xxxxxxxx, ALU Operand B:xxxxxxxx, Immediate Operand:xxxxxxxx, xxxxxxxx, ALU Output Write Back:xxxxxxxx
+Program Counter:00000001, ALU Output:xxxxxxxx, ID_Ex_type:13
+ALU operand A:00a00093, ALU Operand B:00000000, Immediate Operand:00000000, 0000000a, ALU Output Write Back:xxxxxxxx
+Program Counter:00000002, ALU Output:0000000a, ID_Ex_type:13
+ALU operand A:01400113, ALU Operand B:00000000, Immediate Operand:00000000, 00000014, ALU Output Write Back:0000000a
+Program Counter:00000003, ALU Output:00000014, ID_Ex_type:13
+ALU operand A:01900193, ALU Operand B:00000000, Immediate Operand:00000000, 00000019, ALU Output Write Back:00000014
+Program Counter:00000004, ALU Output:00000019, ID_Ex_type:33
+ALU operand A:0073e3b3, ALU Operand B:00000000, Immediate Operand:00000000, 00000007, ALU Output Write Back:00000019
+Program Counter:00000005, ALU Output:00000000, ID_Ex_type:33
+ALU operand A:0073e3b3, ALU Operand B:00000000, Immediate Operand:00000000, 00000007, ALU Output Write Back:00000000
+Program Counter:00000006, ALU Output:00000000, ID_Ex_type:33
+ALU operand A:00208233, ALU Operand B:0000000a, Immediate Operand:00000014, 00000002, ALU Output Write Back:00000000
+Program Counter:00000007, ALU Output:0000001e, ID_Ex_type:33
+ALU operand A:0073e3b3, ALU Operand B:00000000, Immediate Operand:00000000, 00000007, ALU Output Write Back:0000001e
+Program Counter:00000008, ALU Output:00000000, ID_Ex_type:33
+ALU operand A:003202b3, ALU Operand B:0000001e, Immediate Operand:00000019, 00000003, ALU Output Write Back:00000000
+Program Counter:00000009, ALU Output:00000037, ID_Ex_type:7f
+ALU operand A:0000707f, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000a, ALU Output:00000037, ID_Ex_type:00
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000b, ALU Output:00000037, ID_Ex_type:00
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000b, ALU Output:00000037, ID_Ex_type:00
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000b, ALU Output:00000037, ID_Ex_type:00
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+R0 -  0
+R1 - 10
+R2 - 20
+R3 - 25
+R4 - 30
+R5 - 55
+Program Counter:0000000b, ALU Output:00000037, ID_Ex_type:00
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+$finish called at time : 300 ns : File "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_risc32_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 861.418 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 861.418 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_risc32' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_risc32_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_RISC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_risc32
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xelab -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pipe_RISC32
+Compiling module xil_defaultlib.test_risc32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_risc32_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Loading Instructions to memory...
+Register file initialised....
+.........
+.........
+Instructions Loaded....
+Program Counter:00000000, ALU Output:xxxxxxxx
+ALU operand A:xxxxxxxx, ALU Operand B:xxxxxxxx, Immediate Operand:xxxxxxxx, xxxxxxxx, ALU Output Write Back:xxxxxxxx
+Program Counter:00000001, ALU Output:xxxxxxxx
+ALU operand A:00a00093, ALU Operand B:00000000, Immediate Operand:00000000, 0000000a, ALU Output Write Back:xxxxxxxx
+Program Counter:00000002, ALU Output:0000000a
+ALU operand A:01400113, ALU Operand B:00000000, Immediate Operand:00000000, 00000014, ALU Output Write Back:0000000a
+Program Counter:00000003, ALU Output:00000014
+ALU operand A:01900193, ALU Operand B:00000000, Immediate Operand:00000000, 00000019, ALU Output Write Back:00000014
+Program Counter:00000004, ALU Output:00000019
+ALU operand A:0073e3b3, ALU Operand B:00000000, Immediate Operand:00000000, 00000007, ALU Output Write Back:00000019
+Program Counter:00000005, ALU Output:00000000
+ALU operand A:0073e3b3, ALU Operand B:00000000, Immediate Operand:00000000, 00000007, ALU Output Write Back:00000000
+Program Counter:00000006, ALU Output:00000000
+ALU operand A:00208233, ALU Operand B:0000000a, Immediate Operand:00000014, 00000002, ALU Output Write Back:00000000
+Program Counter:00000007, ALU Output:0000001e
+ALU operand A:0073e3b3, ALU Operand B:00000000, Immediate Operand:00000000, 00000007, ALU Output Write Back:0000001e
+Program Counter:00000008, ALU Output:00000000
+ALU operand A:003202b3, ALU Operand B:0000001e, Immediate Operand:00000019, 00000003, ALU Output Write Back:00000000
+Program Counter:00000009, ALU Output:00000037
+ALU operand A:0000707f, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000a, ALU Output:00000037
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000b, ALU Output:00000037
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000b, ALU Output:00000037
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+Program Counter:0000000b, ALU Output:00000037
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+R0 -  0
+R1 - 10
+R2 - 20
+R3 - 25
+R4 - 30
+R5 - 55
+Program Counter:0000000b, ALU Output:00000037
+ALU operand A:00000000, ALU Operand B:00000000, Immediate Operand:00000000, 00000000, ALU Output Write Back:00000037
+$finish called at time : 300 ns : File "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 861.418 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_risc32' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_risc32_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_RISC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_risc32
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xelab -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pipe_RISC32
+Compiling module xil_defaultlib.test_risc32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_risc32_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Loading Instructions to memory...
+Register file initialised....
+.........
+.........
+Instructions Loaded....
+Program Counter:00000000, Insrtuction Register:xxxxxxxx
+ALU operand A:         x, ALU Operand B:         x, Immediate Operand:         x, xxxxxxxx, ALU Output:         x
+Program Counter:00000001, Insrtuction Register:00a00093
+ALU operand A:  10485907, ALU Operand B:         0, Immediate Operand:         0, 0000000a, ALU Output:         x
+Program Counter:00000002, Insrtuction Register:01400113
+ALU operand A:  20971795, ALU Operand B:         0, Immediate Operand:         0, 00000014, ALU Output:        10
+Program Counter:00000003, Insrtuction Register:01900193
+ALU operand A:  26214803, ALU Operand B:         0, Immediate Operand:         0, 00000019, ALU Output:        20
+Program Counter:00000004, Insrtuction Register:0073e3b3
+ALU operand A:   7594931, ALU Operand B:         0, Immediate Operand:         0, 00000007, ALU Output:        25
+Program Counter:00000005, Insrtuction Register:0073e3b3
+ALU operand A:   7594931, ALU Operand B:         0, Immediate Operand:         0, 00000007, ALU Output:         0
+Program Counter:00000006, Insrtuction Register:00208233
+ALU operand A:   2130483, ALU Operand B:        10, Immediate Operand:        20, 00000002, ALU Output:         0
+Program Counter:00000007, Insrtuction Register:0073e3b3
+ALU operand A:   7594931, ALU Operand B:         0, Immediate Operand:         0, 00000007, ALU Output:        30
+Program Counter:00000008, Insrtuction Register:003202b3
+ALU operand A:   3277491, ALU Operand B:        30, Immediate Operand:        25, 00000003, ALU Output:         0
+Program Counter:00000009, Insrtuction Register:0000707f
+ALU operand A:     28799, ALU Operand B:         0, Immediate Operand:         0, 00000000, ALU Output:        55
+Program Counter:0000000a, Insrtuction Register:00000000
+ALU operand A:         0, ALU Operand B:         0, Immediate Operand:         0, 00000000, ALU Output:        55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A:         0, ALU Operand B:         0, Immediate Operand:         0, 00000000, ALU Output:        55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A:         0, ALU Operand B:         0, Immediate Operand:         0, 00000000, ALU Output:        55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A:         0, ALU Operand B:         0, Immediate Operand:         0, 00000000, ALU Output:        55
+R0 -  0
+R1 - 10
+R2 - 20
+R3 - 25
+R4 - 30
+R5 - 55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A:         0, ALU Operand B:         0, Immediate Operand:         0, 00000000, ALU Output:        55
+$finish called at time : 300 ns : File "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 861.418 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_risc32' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_risc32_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_RISC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_risc32
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xelab -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pipe_RISC32
+Compiling module xil_defaultlib.test_risc32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_risc32_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Loading Instructions to memory...
+Register file initialised....
+.........
+.........
+Instructions Loaded....
+Program Counter:00000000, Insrtuction Register:xxxxxxxx
+ALU operand A(rs1):         x, ALU Operand B(rt/rs2):         x, Immediate Operand:         x, ALU Output:         x
+Program Counter:00000001, Insrtuction Register:00a00093
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:        10, ALU Output:         x
+Program Counter:00000002, Insrtuction Register:01400113
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:        20, ALU Output:        10
+Program Counter:00000003, Insrtuction Register:01900193
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:        25, ALU Output:        20
+Program Counter:00000004, Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         7, ALU Output:        25
+Program Counter:00000005, Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         7, ALU Output:         0
+Program Counter:00000006, Insrtuction Register:00208233
+ALU operand A(rs1):        10, ALU Operand B(rt/rs2):        20, Immediate Operand:         2, ALU Output:         0
+Program Counter:00000007, Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         7, ALU Output:        30
+Program Counter:00000008, Insrtuction Register:003202b3
+ALU operand A(rs1):        30, ALU Operand B(rt/rs2):        25, Immediate Operand:         3, ALU Output:         0
+Program Counter:00000009, Insrtuction Register:0000707f
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         0, ALU Output:        55
+Program Counter:0000000a, Insrtuction Register:00000000
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         0, ALU Output:        55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         0, ALU Output:        55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         0, ALU Output:        55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         0, ALU Output:        55
+R0 -  0
+R1 - 10
+R2 - 20
+R3 - 25
+R4 - 30
+R5 - 55
+Program Counter:0000000b, Insrtuction Register:00000000
+ALU operand A(rs1):         0, ALU Operand B(rt/rs2):         0, Immediate Operand:         0, ALU Output:        55
+$finish called at time : 300 ns : File "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 861.418 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_risc32' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_risc32_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_RISC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_risc32
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xelab -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pipe_RISC32
+Compiling module xil_defaultlib.test_risc32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_risc32_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Loading Instructions to memory...
+Register file initialised....
+.........
+.........
+Instructions Loaded....
+Program Counter:00000000, 	Insrtuction Register:xxxxxxxx
+ALU operand A(rs1):         x, 	ALU Operand B(rt/rs2):         x, 	Immediate Operand:         x, 	ALU Output:         x
+Program Counter:00000001, 	Insrtuction Register:00a00093
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:        10, 	ALU Output:         x
+Program Counter:00000002, 	Insrtuction Register:01400113
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:        20, 	ALU Output:        10
+Program Counter:00000003, 	Insrtuction Register:01900193
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:        25, 	ALU Output:        20
+Program Counter:00000004, 	Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         7, 	ALU Output:        25
+Program Counter:00000005, 	Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         7, 	ALU Output:         0
+Program Counter:00000006, 	Insrtuction Register:00208233
+ALU operand A(rs1):        10, 	ALU Operand B(rt/rs2):        20, 	Immediate Operand:         2, 	ALU Output:         0
+Program Counter:00000007, 	Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         7, 	ALU Output:        30
+Program Counter:00000008, 	Insrtuction Register:003202b3
+ALU operand A(rs1):        30, 	ALU Operand B(rt/rs2):        25, 	Immediate Operand:         3, 	ALU Output:         0
+Program Counter:00000009, 	Insrtuction Register:0000707f
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         0, 	ALU Output:        55
+Program Counter:0000000a, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         0, 	ALU Output:        55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         0, 	ALU Output:        55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         0, 	ALU Output:        55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         0, 	ALU Output:        55
+R0 -  0
+R1 - 10
+R2 - 20
+R3 - 25
+R4 - 30
+R5 - 55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 	ALU Operand B(rt/rs2):         0, 	Immediate Operand:         0, 	ALU Output:        55
+$finish called at time : 300 ns : File "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 861.418 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_risc32' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_risc32_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_RISC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_risc32
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xelab -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pipe_RISC32
+Compiling module xil_defaultlib.test_risc32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_risc32_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Loading Instructions to memory...
+Register file initialised....
+.........
+.........
+Instructions Loaded....
+Program Counter:00000000, 	Insrtuction Register:xxxxxxxx
+ALU operand A(rs1):         x, 		ALU Operand B(rt/rs2):         x, 		Immediate Operand:         x, 		ALU Output:         x
+Program Counter:00000001, 	Insrtuction Register:00a00093
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:        10, 		ALU Output:         x
+Program Counter:00000002, 	Insrtuction Register:01400113
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:        20, 		ALU Output:        10
+Program Counter:00000003, 	Insrtuction Register:01900193
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:        25, 		ALU Output:        20
+Program Counter:00000004, 	Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         7, 		ALU Output:        25
+Program Counter:00000005, 	Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         7, 		ALU Output:         0
+Program Counter:00000006, 	Insrtuction Register:00208233
+ALU operand A(rs1):        10, 		ALU Operand B(rt/rs2):        20, 		Immediate Operand:         2, 		ALU Output:         0
+Program Counter:00000007, 	Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         7, 		ALU Output:        30
+Program Counter:00000008, 	Insrtuction Register:003202b3
+ALU operand A(rs1):        30, 		ALU Operand B(rt/rs2):        25, 		Immediate Operand:         3, 		ALU Output:         0
+Program Counter:00000009, 	Insrtuction Register:0000707f
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000a, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+R0 -  0
+R1 - 10
+R2 - 20
+R3 - 25
+R4 - 30
+R5 - 55
+Program Counter:0000000b, 	Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+$finish called at time : 300 ns : File "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" Line 84
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 861.418 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_risc32' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_risc32_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_RISC32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_risc32
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim'
+"xelab -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e7a915dafc1745418709943a18a053a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_risc32_behav xil_defaultlib.test_risc32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/saika/Documents/riscv32/mips32.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pipe_RISC32
+Compiling module xil_defaultlib.test_risc32
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_risc32_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Loading Instructions to memory...
+Register file initialised....
+.........
+.........
+Instructions Loaded....
+Program Counter:00000000
+Insrtuction Register:xxxxxxxx
+ALU operand A(rs1):         x, 		ALU Operand B(rt/rs2):         x, 		Immediate Operand:         x, 		ALU Output:         x
+Program Counter:00000001
+Insrtuction Register:00a00093
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:        10, 		ALU Output:         x
+Program Counter:00000002
+Insrtuction Register:01400113
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:        20, 		ALU Output:        10
+Program Counter:00000003
+Insrtuction Register:01900193
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:        25, 		ALU Output:        20
+Program Counter:00000004
+Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         7, 		ALU Output:        25
+Program Counter:00000005
+Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         7, 		ALU Output:         0
+Program Counter:00000006
+Insrtuction Register:00208233
+ALU operand A(rs1):        10, 		ALU Operand B(rt/rs2):        20, 		Immediate Operand:         2, 		ALU Output:         0
+Program Counter:00000007
+Insrtuction Register:0073e3b3
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         7, 		ALU Output:        30
+Program Counter:00000008
+Insrtuction Register:003202b3
+ALU operand A(rs1):        30, 		ALU Operand B(rt/rs2):        25, 		Immediate Operand:         3, 		ALU Output:         0
+Program Counter:00000009
+Insrtuction Register:0000707f
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000a
+Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000b
+Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000b
+Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+Program Counter:0000000b
+Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+R0 -  0
+R1 - 10
+R2 - 20
+R3 - 25
+R4 - 30
+R5 - 55
+Program Counter:0000000b
+Insrtuction Register:00000000
+ALU operand A(rs1):         0, 		ALU Operand B(rt/rs2):         0, 		Immediate Operand:         0, 		ALU Output:        55
+$finish called at time : 300 ns : File "C:/Users/saika/Documents/riscv32/MIPS32_tb.v" Line 85
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 861.418 ; gain = 0.000
